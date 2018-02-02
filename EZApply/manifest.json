@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "EZApply",
+  "description": "This extension allows the user to fill in their information to online job applications",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "EZ_icon_red.png",
+    "default_popup": "popup.html",
+    "default_title": "EZApply. Click here to visit our site or to complete application"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
