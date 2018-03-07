@@ -2,24 +2,25 @@
   "manifest_version": 2,
 
   "name": "EZApply",
-  "description": "This extension allows the user to fill in their information to online job applications",
+  "description": "PLACEHOLDER",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "images/EZ_icon_red.png",
-    "default_popup": "popup.html",
-    "default_title": "EZApply. Click here to visit our site or to complete application"
+  
+  "icons": {
+    "16": "images/ez_icon_red.png"
   },
-
-  "content_scripts": [{
-    "matches": ["<all_urls>"],
-    "all_frames": true,
-    "css": ["style.css"],
-    "js": ["dom-interact.js"]
-  }],
-
+  "content_scripts": [
+    {
+      "js": ["jquery-3.3.1.js", "content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "images/ez_icon_red.png",
+    "default_popup": "popup.html"
+  },
   "permissions": [
     "activeTab",
+    "tabs",
     "storage"
   ]
 }
