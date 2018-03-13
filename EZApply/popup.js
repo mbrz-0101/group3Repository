@@ -1,3 +1,5 @@
+document.getElementById("work-button").addEventListener('click', executeTheseFunctions);
+
 function executeTheseFunctions(e) {
 
   // highlightInputFields
@@ -12,5 +14,3 @@ function executeTheseFunctions(e) {
 
   window.close();
 }
-
-document.getElementById("work-button").addEventListener('click', executeTheseFunctions);
